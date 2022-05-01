@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Wilson Zoo Home Page">
+    <meta name="theme-color" content="0E5FFF">
+    <title>Wilson Zoo | Welcome</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="sitelogo" href="images/logo.svg">
+    <link rel="manifest" href="/manifest.json">
+
+</head>
+
+<!--navigation bar-->
+
+<body>
+    <header>
+        <div class="container">
+            <div id="branding">
+
+               <a href="index.html"><img src="images/logo.svg" alt="Wilson Zoo Logo"></a>
+            </div>
+            <nav>
+                <ul>
+                    <li class="current"><a href="index.html"><b>Home</b></a></li>
+                    <li><a href="kids.html"><b>Kids Page</b></a></li>
+                    <li><a href="animals.html"><b>The Animals</b></a></li>
+                    <li><a href="about.html"><b>About Us</b></a></li>
+                </ul>
+        
+            </nav>
+
+        </div>
+    </header>
+   
+    <!--Wilson Zoo Welcome Banner Section-->
+   
+   
+    <section id="showcase">
+        <div class="container">
+            <h1>Welcome to Wilson Zoo</h1>
+    
+        </div> 
+
+      
+    </section>
+
+    <!--Wilson Zoo Values Section-->
+
+    <section id="aboutus">
+        <div class="container">
+            <h1>
+                Our Values
+            </h1>
+            <p>
+                Here at Wilson Zoo we believe that all creatures deserve respect no matter how big all small.
+                We ensure that all animals are correctly taken care of. Making their health our very top priority along width
+                their comfort at our sites. We hope to achieve a great enviroment for all animal lovers to come together to learn and 
+                share their love of all creatures.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!--news and events flexboxes-->
+
+    <section id="notices">
+        <div class="container">
+            <div class="notice">
+                <p><b>  News & Events This Week  </b></p>
+                <table class="content-table">
+                    
+                </table>
+                <p class="notice-title">May</p>
+                
+                <p>Visit Dexter and his friends! They are here to make a big splash in town!</p>
+
+                <p class="notice-title">April</p>
+                <p>Spring is here! Get ready for our new feathered friends to hatch!</p>
+                
+                <p class="notice-title">March</p>
+                <p>Our feathered friends have laid some eggs. They will be hatching in the coming weeks!</p>
+
+                <img src="images/newsevents.png" alt="newsevents">
+                
+                
+            </div>
+
+            
+
+            <div class="notice">
+
+                <p><b>Animal of the Week </b></p>
+                <p>
+                    Oscar has been voted Our Animal of the Week!
+                </p>
+               
+                <p>
+                    Click on the image of oscar to learn more about oscar and other animals
+                
+                </p>
+                <a href="animals.html"><img src="images/oscar.png" alt="Oscar the Animal of the Week"></a>
+
+
+            </div>
+
+           
+           <div class="notice">
+                <p>   <b> Event of the Week</b>     </p>
+                <p>
+                    Dexter and Friends
+                    Come and visist Dexter the dolphin and his friends.
+                    They will be in town for just 1 week but they will be 
+                    sure to put on a splash for everyone. Click on the image of Dexter and his pals to book tickets.
+                </p>
+
+                <p>
+                    <a href="bookdonate.html"><img src="images/Dexter.png" alt="Dexter the Dolphin"></a>
+
+                </p>
+         
+
+
+     
+            </div>
+      
+      
+        </div>
+
+    </section>
+    
+
+
+
+   
+       
+ <!--call for actions at bottom of page-->
+
+    <section id="buttons">
+        <div class="container">
+            <div class="button">
+                <p>
+                    
+                    <a href="bookdonate.html" target="#donate"><img id="donatecall" src="images/donatecall.svg" alt="donatecall.svg"></a>
+                </p>
+                
+            </div>
+
+            <div class="button">
+                <p>
+                    
+                    <a href="coming.html"><img id="comingsoon" src="images/coming.svg" alt="coming.svg"></a>
+                </p>
+                
+            </div>
+            <div class="button">
+                <p>
+                    <a href="bookdonate.html"><img id="ticket" src="images/ticket.png" alt="ticket.png"></a>
+
+                </p>
+
+
+            </div>
+                
+                
+        </div>
+
+    </section>
+
+    <!--footer at the bottom of the page-->
+
+    <footer>
+       
+
+        <h1 class="page-title">Click the link below to donate or book events for wilson Zoo</h1>
+        <p>
+            
+            <a href="bookdonate.html">Click this line to donate or book events for Wilson Zoo</a>
+        </p>
+
+        <p> Designed by: Michael Oppong | Student ID: 21017747 | </p>
+    </footer>
+
+
+
+
+
+
+    <script>
+        //check whether browser support service workers
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', function() {
+            navigator.serviceWorker.register('serviceworker.js').then(
+           function(registration) {
+           console.log('Service worker registration successful',registration);
+           }, 
+          function(err) {
+           console.log('Service worker registration failed', err);
+                });
+            });
+        }
+        </script>
+        
+
+</body> 
+
+
+
+    
+

@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <meta name="description" content="Wilson Zoo Animal Page">
+    <title>Wilson Zoo | Welcome</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="manifest" href="/manifest.json">
+</head>
+
+
+<!--navigation bar-->
+
+<body>
+    <header>
+        <div class="container">
+            <div id="branding">
+
+               <a href="index.html"><img src="images/logo.svg" alt="Wilson Zoo Logo"></a>
+            </div>
+            <nav>
+                <ul>
+                    <li class><a href="index.html"><b>Home</b></a></li>
+                    <li><a href="kids.html"><b>Kids Page</b></a></li>
+                    <li class="current"><a href="animals.html"><b>The Animals</b></a></li>
+                    <li><a href="about.html"><b>About Us</b></a></li>
+                </ul>
+        
+            </nav>
+
+        </div>
+    </header>
+ <!--Animal of the week section-->
+    <section class="animals">
+        <div class="conainer">
+            <div>
+               <h3> Oscar our animal of the week</h3>
+               <p>This is Oscar the Owl, who was vouted our animal of the week. Click on the image of oscar to learn more. Please feel free to browse through the gallery of our wonderful animal friends down below
+            </p>
+                <a href="coming.html"><img src="images/oscar.png" alt="oscar"></a>
+              
+
+                <footer>
+
+                </footer>
+
+            </div>
+
+           
+
+            
+            
+
+        </div>
+       
+    </section>
+
+    <!--Animal Gallery Section-->
+
+    <section class="animals">
+        <div class="conainer">
+            <div>
+              
+               <p>These our most popular Animal Friends here at Wilson Zoo. If you would like to learn more information about them, please  click on their images to find out where they're located in the Zoo and to learn more about them!
+               </p>
+
+                
+            </div>
+
+           
+
+            
+            
+
+        </div>
+       
+    </section>
+
+   
+
+   <section class="pictures">
+       <div class="pic">
+          <h3>The Mean Meerkats</h3>
+          
+          <a href="coming.html"><img src="images/meerkats.png" alt="meerkats"></a>
+         
+          
+        </div>
+
+       <div class="pic">
+          <h3>Gary the Girraffe</h3>
+          <a href="coming.html"><img src="images/giraffe.png" alt="Gary"></a>
+          
+      </div>
+
+      <div class="pic">
+          <h3>The Lazy Lemurs</h3>
+          <a href="coming.html"><img src="images/lemurs.png" alt="lemurs"></a>
+          
+      </div>
+   </section>
+
+   <section class="pictures">
+       <div class="pic">
+         <h3>Leo the Lion</h3>
+         <a href="coming.html"><img src="images/lions.png" alt="leo"></a>
+         
+       </div>
+
+       <div class="pic">
+          <h3> Po The Panda</h3>
+          <a href="coming.html"><img src="images/po.png" alt="Po"></a>
+          
+       </div>
+
+       <div class="pic">
+         <h3>Killian the Crocodille</h3>
+         <a href="coming.html"><img src="images/croc.png" alt="Killian"></a>
+         
+       </div>
+  </section>
+ 
+  <!--call for actions at bottom of page-->
+
+   
+   <section id="buttons">     
+      <div class="container">
+        <div class="button">
+            <h3>
+                
+                <a href="bookdonate.html"><img id="donatecall" src="images/donatecall.svg" alt="donatecall.svg"></a>
+            </h3>
+            
+         </div>
+
+          <div class="button">
+            <h3>
+                <a href="bookdonate.html"><img id="ticket" src="images/ticket.png" alt="ticket.png"></a>
+
+             </h3>
+            
+
+        
+        </div>
+
+      </div>       
+   </section>
+
+      
+
+
+
+
+      
+
+
+
+
+
+
+
+
+
+
+   
+
+
+   
+        <!--footer at the bottom of the page-->
+   
+  
+  
+        <footer>
+       
+
+        <h1 class="page-title">Click the link below to donate or book events for wilson Zoo</h1>
+        <p>
+            
+            <a href="bookdonate.html">Click this line to donate or book events for Wilson Zoo</a>
+        </p>
+
+        <p> Designed by: Michael Oppong | Student ID: 21017747 |  </p>
+       </footer>
+
+
+
+
+    <script>
+        //check whether browser support service workers
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', function() {
+            navigator.serviceWorker.register('serviceworker.js').then(
+           function(registration) {
+           console.log('Service worker registration successful',registration);
+           }, 
+          function(err) {
+           console.log('Service worker registration failed', err);
+                });
+            });
+        }
+        </script>
+        
+  
+
+
+</body> 
+
+
+
+
+
+    
+

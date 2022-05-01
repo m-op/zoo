@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <meta name="description" content="Wilson Zoo Kids Page">
+    <title>Wilson Zoo | Welcome</title>
+    <link rel="stylesheet" href="css/kidspage.css">
+    <link rel="manifest" href="/manifest.json">
+</head>
+
+<!--navigation bar-->
+
+<body>
+    <header>
+        <div class="container">
+            <div id="branding">
+
+               <a href="index.html"><img src="images/logo.svg" alt="wilson zoo logo"></a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html"><b>Home</b></a></li>
+                    <li class="current"><a href="kids.html"><b>Kids Page</b></a></li>
+                    <li><a href="animals.html"><b>The Animals</b></a></li>
+                    <li><a href="about.html"><b>About Us</b></a></li>
+                </ul>
+        
+            </nav>
+
+        </div>
+    </header>
+
+    <!--Kids Club Section-->
+
+    <section id="main">
+        <div class="container">
+            <article id="kids-club">
+                <h1 class="page-title">Kids Club</h1>
+               
+                <p>Come and join us at our kid club where you will take part in many activities such as animal facepainting and washing animals. </p>
+                
+                <p> Our different clubs are fille with different activities at different parts of the zoo. Each Club comes with its own unique face mask and t-shirt to make
+                    you feel part of the pride, pack, flock, school or heard!
+                </p> 
+
+                
+                    <ol>
+                        <li><b>Tiger Cubs</b></li>
+                        
+                    
+    
+                        <li><b>Ocean Club</b></li>
+                        
+                   
+    
+              
+    
+                        <li><b>Monkey Club</b></li>
+                        
+                        
+                    </ol>
+
+                    <p>
+                        The Tiger Club siginiture colour is orange. With a tiger face mask. The tiger club has wonderful activties such as 
+                    </p>
+
+                    <p>
+                        The Ocean Club signiture colour is blue. We have lovely octopus face masks and participate mostly in water activities such as swimming and water slides. 
+                    </p>
+
+                    <p>
+                        The Monkey club loves to clim and explore. We have amazing rock climbing activities for our members 
+                    </p>
+
+                
+
+                <img src="images/kidspage.png" alt="kidspic">
+            
+
+                   
+
+
+            </article>
+
+            <!--sidebar what wilson zoo does-->
+            <aside id="sidebar">
+                
+                <div class="frame">
+
+                      <img src="images/crow.svg" alt="crow">
+                     <p><b>How to help the birds in your Garden</b></p>
+                  <p>
+                    With the growth of the economy an the concreate jungles of the City it leads to a lot of our animal friends being forced out of their home. 
+                    this makes it a lot harder for them to repreoduce as their ecosystems are often destroyed with the development of new urban zones. In efforts to aim our feathered friends 
+                    Wilson Zoo have found terrific ways in which we can help our Animal friends. 
+
+                  </p>
+
+                
+                  <p><b>The Bird Feeder</b></p>
+                  <p>
+                    Birds can eat up to 10,000 calories a day, they spend most of the day looking for food for their young and consuming food. Bird Feeders help birds
+                    by cutting down on the time they spend on gatheting food. Click the link below to learn how to build a bird feeder with 
+                    household items.
+                    <a href="https://www.bbc.co.uk/cbeebies/makes/bird-feeder?msclkid=bc5d931dc7b311ec8f2db2e9e1c3e9e1">Click here to learn how to make a BirdD Feeder</a>
+                  </p>
+
+                  <p><b>The Bird Bath</b></p>
+                  <p>
+                    As birds have waterproof feathers they don't actually use Birth Bath's to bathe. They use it to release dirt that gets stuck in their feathers.
+                    This allows for a much more fluid movement when flying around. They also use the bird bath as a drinking water.
+                    <a href="https://www.thespruce.com/diy-bird-baths-4172975">Click here to learn about 10 Easy DIY Birth Bath Projects you can make at home.</a>
+                  </p>
+
+                  <p><b>The Bird House</b></p>
+                  <p>
+                   A Bird House offers Birds a safe area to lay their eggs without having to worry about potential predators stealing them. This help keep out potential threats to the bird. It also gives them a safe space to rest at night time comapred to their traiditional home of 
+                   nests made out of twigs and pieces of grass. 
+
+                    <a href="https://www.thespruce.com/diy-bird-baths-4172975"> Click here to make birdhouses from recyclable products in your house.</a>
+                  </p>
+
+
+
+                </div>
+
+
+
+
+
+
+            </aside>
+
+            
+
+        </div>
+        
+
+        
+
+    </section>
+
+
+   
+
+
+   <!--call for actions at bottom of page-->
+
+   <section id="buttons">
+    <div class="container">
+        <div class="button">
+            <p>
+                
+                <a href="bookdonate.html" target="#donate"><img id="donatecall" src="images/donatecall.svg" alt="donatecall.svg"></a>
+            </p>
+            
+        </div>
+
+        
+        <div class="button">
+            <p>
+                <a href="bookdonate.html"><img id="ticket" src="images/ticket.png" alt="ticket.png"></a>
+
+            </p>
+            
+
+
+        </div>
+
+          
+
+        
+
+
+    </div>
+</section>
+   
+   
+    
+    <!--footer at the bottom of the page-->
+
+
+    <footer>
+       
+
+        <h1 class="page-title">Click the link below to donate or book events for wilson Zoo</h1>
+        <p>
+            
+            <a href="bookdonate.html">Click this line to donate or book events for Wilson Zoo</a>
+        </p>
+
+        <p> Designed by: Michael Oppong | Student ID: 21017747 | </p>
+    </footer>
+
+
+
+    <script>
+        //check whether browser support service workers
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', function() {
+            navigator.serviceWorker.register('serviceworker.js').then(
+           function(registration) {
+           console.log('Service worker registration successful',registration);
+           }, 
+          function(err) {
+           console.log('Service worker registration failed', err);
+                });
+            });
+        }
+        </script>
+        
+
+</body> 
+
+
+

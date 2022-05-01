@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <meta name="description" content="Wilson Holdings Page">
+    <title>Wilson Zoo | Welcome</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="manifest" href="/manifest.json">
+</head>
+
+    <!--navigation bar-->
+
+<body>
+    <header>
+        <div class="container">
+            <div id="branding">
+
+               <a href="index.html"><img src="images/logo.svg" alt="Wilson Zoo Logo"></a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html"><b>Home</b></a></li>
+                    <li><a href="kids.html"><b>Kids Page</b></a></li>
+                    <li><a href="animals.html"><b>The Animals</b></a></li>
+                    <li><a href="about.html"><b>About Us</b></a></li>
+                </ul>
+        
+            </nav>
+
+        </div>
+    </header>
+
+    <!--svg holding image-->
+   
+   
+   
+            
+            <a href="coming.html"><img id="comingsoon" src="images/coming.svg" alt="coming.svg"></a>
+
+
+        <!--footer at the bottom of the page-->
+
+    <footer>
+        
+
+        <h1 class="page-title">Click the link below to donate or book events for wilson Zoo</h1>
+        <p>
+            
+            <a href="bookdonate.html">Click this line to donate or book events for Wilson Zoo</a>
+        </p>
+
+        <p> Designed by: Michael Oppong | Student ID: 21017747 | </p>
+    </footer>
+
+
+    <script>
+        //check whether browser support service workers
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', function() {
+            navigator.serviceWorker.register('serviceworker.js').then(
+           function(registration) {
+           console.log('Service worker registration successful',registration);
+           }, 
+          function(err) {
+           console.log('Service worker registration failed', err);
+                });
+            });
+        }
+        </script>
+        
+
+
+</body> 
+
+
+
+
+    
+
